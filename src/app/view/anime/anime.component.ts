@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './anime.component.html',
   styleUrls: ['./anime.component.css']
 })
-export class AnimeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class AnimeComponent {
 
 }

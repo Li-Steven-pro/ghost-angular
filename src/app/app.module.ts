@@ -12,6 +12,7 @@ import { AnimeCardComponent } from './view/anime-card/anime-card.component';
 import { MainMenuComponent } from './view/main-menu/main-menu.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RecentComponent } from './view/recent/recent.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { RecentComponent } from './view/recent/recent.component';
     AnimeCardComponent,
     MainMenuComponent,
     RecentComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
