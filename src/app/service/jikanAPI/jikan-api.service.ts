@@ -19,6 +19,4 @@ export class JikanAPIService {
     var titleFormated = titleSplited.join("%20");
     this.http.get(this.base_url + "search/anime?q="+titleFormated+"&page=1").subscribe(data => console.log(data));
   }
-
-
 }
