@@ -1,0 +1,23 @@
+.main-menu-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  min-width: var(--min-menu-width);
+
+  background-color: var(--menu-pane-color);
+  border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+  height: 100%;
+  position: fixed;
+}
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+}
+.menu-item {
+  margin: auto;
+  margin-left: 2rem;
+}

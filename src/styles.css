@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global colors (and properties)*/
+:root {
+  /*Colors*/
+  --primary-color: #fff;
+  --background-color: linear-gradient(180deg, #3c02c4 0%, #2a0580 92.31%);
+  --background-color-overlay: linear-gradient(
+    116.26deg,
+    rgba(255, 255, 255, 0.6) 2.4%,
+    rgba(255, 255, 255, 0.1) 97.46%
+  );
+  --text-color: #fff;
+  --transparent-color: rgba(255, 255, 255, 0.4);
+  --menu-pane-color: rgba(52, 9, 153, 0.7);
+
+  /*Menu size*/
+  --min-menu-width: 20rem;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a,
+li,
+tr {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+}
+/*Logo*/
+h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--transparent-color);
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--transparent-color);
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+li {
+  list-style: none;
+}
+/*
+p {
+  font-weight: 400;
+}
+span {
+  font-weight: 400;
+}
+a {
+  font-weight: 400;
+}
+*/
+.material-icons.md-dark {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-36 {
+  font-size: 36px;
+  font-family: "Material Icons Outlined";
+}
