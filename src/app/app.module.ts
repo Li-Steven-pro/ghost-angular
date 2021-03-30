@@ -6,9 +6,9 @@ import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AnimeCardComponent } from './anime-card/anime-card.component';
-import { MainMenuComponent } from './Menu/main-menu/main-menu.component';
+import { HomeComponent } from './View/home/home.component';
+import { AnimeCardComponent } from './View/anime-card/anime-card.component';
+import { MainMenuComponent } from './View/main-menu/main-menu.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
