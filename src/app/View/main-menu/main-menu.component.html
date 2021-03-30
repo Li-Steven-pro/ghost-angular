@@ -3,9 +3,11 @@
   <div>
     <h2>Menu</h2>
     <ul>
-      <li *ngFor="let item of menuItemList" class="menu-list">
-        <mat-icon class=".material-icons.md-36">{{ item.icon }}</mat-icon>
-        <h3 class="menu-item">{{ item.name }}</h3>
+      <li *ngFor="let item of menuItemList">
+        <a class="menu-list" href="{{ item.href }}">
+          <mat-icon class=".material-icons.md-36">{{ item.icon }}</mat-icon>
+          <h3 class="menu-item">{{ item.name }}</h3>
+        </a>
       </li>
     </ul>
   </div>

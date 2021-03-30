@@ -1,4 +1,4 @@
-import { Icon } from 'src/app/interface/MenuItem'
+import { Icon } from 'src/app/interface/menu-item'
 
 export const ICONS : Icon[] = [
     {

@@ -1,4 +1,4 @@
-import { MenuItem } from 'src/app/interface/MenuItem';
+import { MenuItem } from 'src/app/interface/menu-item';
 
 export const MENUITEMS: MenuItem[] = [
     { id: 1, icon: "home", name: "Home", href: "/"},

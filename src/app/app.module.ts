@@ -11,6 +11,7 @@ import { HomeComponent } from './view/home/home.component';
 import { AnimeCardComponent } from './view/anime-card/anime-card.component';
 import { MainMenuComponent } from './view/main-menu/main-menu.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { RecentComponent } from './view/recent/recent.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AnimeCardComponent,
     MainMenuComponent,
+    RecentComponent,
   ],
   imports: [
     BrowserModule,
