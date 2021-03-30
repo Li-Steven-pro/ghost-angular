@@ -2,9 +2,6 @@
 // For more information: https://material.angular.io/guide/theming
 @import "~@angular/material/theming";
 // Plus imports for other components in your app.
-$custom-typography: mat-typography-config(
-  $font-family: "Raleway",
-);
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -16,6 +13,8 @@ $custom-typography: mat-typography-config(
 // hue. Available color palettes: https://material.io/design/color/
 $ghost-angular-primary: mat-palette($mat-indigo);
 $ghost-angular-accent: mat-palette($mat-pink, A200, A100, A400);
+$ghost-angular-background: var(--background-color);
+$ghost-angular-background-overlay: var(--background-color-overlay);
 
 // The warn palette is optional (defaults to red).
 $ghost-angular-warn: mat-palette($mat-red);
@@ -28,6 +27,8 @@ $ghost-angular-theme: mat-light-theme(
       primary: $ghost-angular-primary,
       accent: $ghost-angular-accent,
       warn: $ghost-angular-warn,
+      background: $ghost-angular-background,
+      background-overlay: $ghost-angular-background-overlay,
     ),
   )
 );
@@ -36,3 +37,13 @@ $ghost-angular-theme: mat-light-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($ghost-angular-theme);
+
+// Define a custom typography config that overrides the font-family
+$custom-typography: mat-typography-config(
+  $font-family: '"Poppins", sans-serif',
+  $headline: mat-typography-level(2.4rem, 48px, 600),
+  $title: mat-typography-level(2rem, 40px, 300),
+  $body-1: mat-typography-level(1.6rem, 24px, 400),
+);
+
+@include mat-base-typography($custom-typography);
