@@ -23,6 +23,7 @@
     "@angular/router": "~11.2.6",
     "@mdi/light-font": "^0.2.63",
     "@mdi/light-svg": "^0.2.63",
+    "ngx-audio-player": "^11.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.3"

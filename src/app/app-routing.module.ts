@@ -6,6 +6,7 @@ import { ListComponent } from './view/list/list.component';
 import { SearchComponent } from './view/search/search.component';
 import { AnimeComponent } from "./view/anime/anime.component";
 import { RecentComponent } from './view/recent/recent.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
   {path: '', component : HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'list/:provider/:name', component: ListComponent},
   {path: 'anime/:id', component : AnimeComponent},
   {path: 'recent', component: RecentComponent},
+  {path: 'quiz', component: QuizComponent},
 ];
 
 @NgModule({

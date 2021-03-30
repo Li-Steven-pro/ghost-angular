@@ -1,9 +1,10 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './view/anime/anime.component';
@@ -29,7 +30,10 @@ import { QuizComponent } from './quiz/quiz.component';
     AppRoutingModule,
     HttpClientModule,
     NoopAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatCheckboxModule,
+    NgxAudioPlayerModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
