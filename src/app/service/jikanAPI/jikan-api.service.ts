@@ -4,7 +4,7 @@ import {HttpClient, HttpHeaders, HttpErrorResponse, HttpResponse} from '@angular
   providedIn: 'root'
 })
 export class JikanAPIService {
-  base_url : String  = "https://api.jikan.moe/v3/";
+  private base_url = "https://api.jikan.moe/v3/"
 
   constructor(
     private http : HttpClient
@@ -14,7 +14,7 @@ export class JikanAPIService {
     return this.http.get(this.base_url+"anime/"+id).subscribe(data => console.log(data));
   }
 
-  searchAnimeByName(title : String){
+  searchAnimeByName(title : string){
     var titleSplited = title.split(" ");
     var titleFormated = titleSplited.join("%20");
     this.http.get(this.base_url + "search/anime?q="+titleFormated+"&page=1").subscribe(data => console.log(data));
