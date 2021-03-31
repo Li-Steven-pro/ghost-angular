@@ -1,0 +1,31 @@
+.anime-card {
+  border-radius: var(--card-border);
+  width: 600px;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: var(--card-drop-shadow);
+}
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+.card-image {
+  flex: 4 auto;
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+}
+.card-bottom {
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3%;
+  background: var(--cart-background);
+}
+.media-length {
+  flex: end;
+}

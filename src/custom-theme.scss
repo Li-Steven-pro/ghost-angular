@@ -41,9 +41,10 @@ $ghost-angular-theme: mat-light-theme(
 // Define a custom typography config that overrides the font-family
 $custom-typography: mat-typography-config(
   $font-family: '"Poppins", sans-serif',
-  $headline: mat-typography-level(2.4rem, 48px, 600),
-  $title: mat-typography-level(2rem, 40px, 300),
-  $body-1: mat-typography-level(1.6rem, 24px, 400),
+  $headline: mat-typography-level(2rem, 48px, 600),
+  /* h1 */ $title: mat-typography-level(1.8rem, 40px, 100),
+  /* h2 */ $body-1: mat-typography-level(1.4rem, 24px, 300),
+  /* p */
 );
 
 @include mat-base-typography($custom-typography);

@@ -1,16 +1,25 @@
+#logo {
+  color: var(--text-color);
+}
 .main-menu-layout {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px;
-  min-width: var(--min-menu-width);
+  padding: 20px;
+  width: var(--min-menu-width);
 
   background-color: var(--menu-pane-color);
   border-right: 0.1px solid rgba(255, 255, 255, 0.25);
   height: 100%;
   position: fixed;
 }
+.menu-list-container {
+  width: 100%;
+  margin: auto;
+}
 .menu-list {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,5 +28,5 @@
 }
 .menu-item {
   margin: auto;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
