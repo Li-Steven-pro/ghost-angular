@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,7 +31,9 @@ import { HorizontalListComponent } from './view/components/horizontal-list/horiz
     AppRoutingModule,
     HttpClientModule,
     NoopAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

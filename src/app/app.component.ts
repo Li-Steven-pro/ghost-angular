@@ -5,6 +5,7 @@ import { ICONS } from './Contants/Icons';
 import { Icon } from './interface/MenuItem';*/
 import { JikanAPIService } from './service/jikanAPI/jikan-api.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

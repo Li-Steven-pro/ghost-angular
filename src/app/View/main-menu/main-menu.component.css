@@ -1,23 +1,26 @@
 #logo {
   color: var(--text-color);
 }
-.main-menu-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  width: var(--min-menu-width);
 
-  background-color: var(--menu-pane-color);
-  border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+/* Layout */
+.main-layout {
   height: 100%;
-  position: fixed;
+  background: var(--background-color);
 }
+.side-nav {
+  width: 200px;
+  background: var(--menu-pane-color);
+}
+.main-content {
+  padding: 15px;
+}
+
+/* Menu (sidebar) items */
 .menu-list-container {
   width: 100%;
   margin: auto;
 }
-.menu-list {
+.menu-item {
   width: 100%;
   margin: auto;
   display: flex;
@@ -26,7 +29,7 @@
   justify-content: left;
   padding: 10px;
 }
-.menu-item {
+.menu-text {
   margin: auto;
   margin-left: 3rem;
 }
