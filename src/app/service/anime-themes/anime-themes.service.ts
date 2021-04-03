@@ -9,8 +9,8 @@ export class AnimeThemesService {
 
   baseUrl = "https://animethemes-api.herokuapp.com/api/v1/";
   
-  constructor(private http : HttpClient, private headers : HttpHeaders ){
-    headers = new HttpHeaders({
+  constructor(private http : HttpClient){
+    const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Accept': 'application/json',
       'Access-Control-Allow-Origin': '*'
@@ -18,17 +18,17 @@ export class AnimeThemesService {
   }
 
   getAnilist(name : string){
-    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "anilist/" + name, {"headers" : this.headers})
+    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "anilist/" + name)
   }
 
   getMal(name : string){
-    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "mal/" + name , {"headers" : this.headers})
+    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "mal/" + name )
   }
 
   getAnime(id : number){
-    return this.http.get<ThemesAnime>(this.baseUrl+ "anime/" + id, {"headers" : this.headers})
+    return this.http.get<ThemesAnime>(this.baseUrl+ "anime/" + id).toPromise()
   }
   searchAnime(name : string){
-    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "search/anime/"+ name, {"headers" : this.headers})
+    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "search/anime/"+ name).toPromise()
   }
 }

@@ -1,7 +1,7 @@
 <mat-card class="anime-card card-content-color">
-  <img mat-card-image [src]="animeItem.imageSource" [alt]="animeItem.altText" />
+  <img mat-card-image [src]="animeItem.cover" [alt]="animeItem.title[0]" />
   <mat-card-content>
-    <h3>{{ animeItem.title }}</h3>
-    <p class="media-length">{{ animeItem.mediaLength }}</p>
+    <h3>{{ animeItem.title[0] }}</h3>
+    <p class="media-length">00:00</p>
   </mat-card-content>
 </mat-card>

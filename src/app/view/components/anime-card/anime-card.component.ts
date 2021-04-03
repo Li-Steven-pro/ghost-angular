@@ -1,6 +1,7 @@
 import { isDefined } from '@angular/compiler/src/util';
 import { Component, Input} from '@angular/core';
 import { animeCardItem } from 'src/app/interface/anime-card';
+import { ThemesAnime} from 'src/app/interface/anime-themes';
 
 @Component({
   selector: 'app-anime-card',
@@ -8,14 +9,9 @@ import { animeCardItem } from 'src/app/interface/anime-card';
   styleUrls: ['./anime-card.component.css']
 })
 export class AnimeCardComponent{
-  @Input() animeItem: animeCardItem
+  @Input()
+  animeItem!: ThemesAnime;
 
   constructor() {
-    this.animeItem = { 
-      title : "[default title]",
-      mediaLength : "0:00", 
-      imageSource: "./../../../assets/konosuba.png", 
-      altText: "default card"
-    }
   }
 }

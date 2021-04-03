@@ -1,1 +1,33 @@
-<p>search works!</p>
+<div>
+    <div>
+        <mat-form-field>
+            <mat-label>Search</mat-label>
+            <input matInput type="text"  [(ngModel)]="searchParam">
+            <button mat-button *ngIf="searchParam" matSuffix mat-icon-button aria-label="Clear" (click)="searchParam=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+        <button (click)="doSearch()">Search</button>
+    </div>
+    <div>
+        <mat-radio-group [(ngModel)]="provider">
+            <mat-radio-button value="mal">
+                MyAnimeList
+            </mat-radio-button>
+            <mat-radio-button value="anilist">
+                Anilist
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field>
+            <mat-label>Pseudo</mat-label>
+            <input matInput type="text"  [(ngModel)]="pseudo">
+            <button mat-button *ngIf="searchParam" matSuffix mat-icon-button aria-label="Clear" (click)="pseudo=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+        <button (click)="searchList()">Get List</button>
+    </div>
+    <div>
+        <app-anime-card *ngFor="let anime of results" [animeItem]="anime"></app-anime-card>
+    </div>
+</div>
