@@ -17,3 +17,6 @@
 .media-length {
   float: right;
 }
+img {
+  object-fit: cover;
+}

@@ -16,9 +16,11 @@
 .horizontal-list-card {
   display: flex;
   flex-direction: row;
+
   width: 100%;
 }
 .horizontal-list-item {
   width: 300px;
+
   padding: 10px;
 }

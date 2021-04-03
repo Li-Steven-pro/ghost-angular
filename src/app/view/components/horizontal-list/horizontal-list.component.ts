@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {ANIMELISTTEST } from 'src/app/constants/mock-anime-list';
+import { animeCardItem } from 'src/app/interface/anime-card';
 
 @Component({
   selector: 'app-horizontal-list',
@@ -6,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horizontal-list.component.css']
 })
 export class HorizontalListComponent {
-
-  constructor() { }
+  animeList: animeCardItem[];
+  
+  constructor() { 
+    this.animeList = ANIMELISTTEST;
+  }
 
 }
