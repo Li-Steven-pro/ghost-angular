@@ -15,6 +15,7 @@ $ghost-angular-primary: mat-palette($mat-indigo);
 $ghost-angular-accent: mat-palette($mat-pink, A200, A100, A400);
 $ghost-angular-background: var(--background-color);
 $ghost-angular-background-overlay: var(--background-color-overlay);
+$ghost-angular-text: var(--text-color);
 
 // The warn palette is optional (defaults to red).
 $ghost-angular-warn: mat-palette($mat-red);
@@ -29,6 +30,7 @@ $ghost-angular-theme: mat-light-theme(
       warn: $ghost-angular-warn,
       background: $ghost-angular-background,
       background-overlay: $ghost-angular-background-overlay,
+      text: $ghost-angular-text,
     ),
   )
 );
@@ -42,7 +44,7 @@ $ghost-angular-theme: mat-light-theme(
 $custom-typography: mat-typography-config(
   $font-family: '"Poppins", sans-serif',
   $headline: mat-typography-level(2rem, 48px, 600),
-  /* h1 */ $title: mat-typography-level(1.8rem, 40px, 100),
+  /* h1 */ $title: mat-typography-level(1.6rem, 40px, 100),
   /* h2 */ $body-1: mat-typography-level(1.4rem, 24px, 300),
   /* p */
 );

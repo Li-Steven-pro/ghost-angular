@@ -71,21 +71,3 @@ h3 {
 li {
   list-style: none;
 }
-/*
-p {
-  font-weight: 400;
-}
-span {
-  font-weight: 400;
-}
-a {
-  font-weight: 400;
-}
-*/
-.material-icons.md-dark {
-  color: rgba(255, 255, 255, 1);
-}
-.material-icons.md-36 {
-  font-size: 36px;
-  font-family: "Material Icons Outlined";
-}

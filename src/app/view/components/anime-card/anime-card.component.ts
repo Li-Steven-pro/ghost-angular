@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AnimeCardComponent{
   animeTitle = 'default title'
   mediaLength = '3:00'
+  source = './../../../assets/konosuba.png'
+  altText = 'konosuba'
 
   constructor() { }
 }

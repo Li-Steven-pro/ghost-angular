@@ -1,7 +1,7 @@
-<div class="anime-card card-layout">
-  <img src="./../../../assets/konosuba.png" alt="Konosuba" class="card-image" />
-  <div class="card-bottom">
-    <p>{{ animeTitle }}</p>
+<mat-card class="anime-card card-content-color">
+  <img mat-card-image [src]="source" [alt]="altText" />
+  <mat-card-content>
+    <h3>{{ animeTitle }}</h3>
     <p class="media-length">{{ mediaLength }}</p>
-  </div>
-</div>
+  </mat-card-content>
+</mat-card>
