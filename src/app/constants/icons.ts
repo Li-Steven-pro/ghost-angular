@@ -12,10 +12,5 @@ export const ICONS : Icon[] = [
     {
         label: 'mdil-clock',
         path: 'src/assets/svg/clock.svg'
-    },
-    {
-        label: 'mdil-format-list-bulleted',
-        path: 'src/assets/svg/format-list-bulleted.svg'
-    },
-    
+    }
 ]

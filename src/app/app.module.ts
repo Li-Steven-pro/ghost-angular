@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './view/anime/anime.component';
 import { HomeComponent } from './view/home/home.component';
-import { AnimeCardComponent } from './view/anime-card/anime-card.component';
-import { MainMenuComponent } from './view/main-menu/main-menu.component';
+import { AnimeCardComponent } from './component/anime-card/anime-card.component';
+import { MainMenuComponent } from './component/main-menu/main-menu.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RecentComponent } from './view/recent/recent.component';
 
