@@ -7,14 +7,10 @@ import {MENUITEMS} from 'src/app/constants/menu-items.constants';
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.component.css']
 })
-export class MainMenuComponent implements OnInit {
+export class MainMenuComponent{
 
   menuItemList: MenuItem[];
   constructor() {
     this.menuItemList = MENUITEMS;
    }
-
-  ngOnInit(): void {
-  }
-
 }

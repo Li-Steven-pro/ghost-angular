@@ -1,0 +1,24 @@
+<mat-sidenav-container class="main-layout">
+  <!-- Side navigation menu -->
+  <mat-sidenav mode="side" opened class="side-nav">
+    <!-- Logo -->
+    <h1 id="logo">Ghost</h1>
+    <mat-divider></mat-divider>
+
+    <!-- Menu-->
+    <mat-list>
+      <h1>Menu</h1>
+      <mat-nav-list>
+        <a mat-list-item *ngFor="let item of menuItemList" [href]="item.href">
+          <mat-icon class=".material-icons.md-24">{{ item.icon }}</mat-icon>
+          <h2 class="menu-text">{{ item.name }}</h2>
+        </a>
+      </mat-nav-list>
+    </mat-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content class="main-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

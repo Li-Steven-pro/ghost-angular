@@ -1,0 +1,19 @@
+.anime-card {
+  border-radius: var(--card-border);
+  max-width: 600px;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.anime-card:hover {
+  box-shadow: var(--card-drop-shadow);
+}
+.anime-card:active {
+}
+.card-content-color {
+  background: var(--cart-background);
+}
+.media-length {
+  float: right;
+}
