@@ -1,1 +1,5 @@
-<p>anime works!</p>
+<vg-player>
+  <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+    <source [src]="anime.themes[0].mirrors[0].mirror" type="video/webm" />
+  </video>
+</vg-player>

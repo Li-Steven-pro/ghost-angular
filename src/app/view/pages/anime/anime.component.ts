@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ThemesAnime } from 'src/app/interface/anime-themes';
 
 /**
- * A page that displays the details of an anime
+ * A page for media player and
+ * displays the details of an anime
  */
 @Component({
   selector: 'app-anime',
@@ -9,7 +11,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./anime.component.css']
 })
 export class AnimeComponent{
-
+  @Input() anime!: ThemesAnime;
+  
   constructor() { }
 
 }
