@@ -18,13 +18,13 @@ export class SearchComponent {
   pseudo = "";
 
   constructor(private route: ActivatedRoute, 
-    private animeTheme : AnimeThemesService,
+    private animeThemeService : AnimeThemesService,
     private router : Router) {
   }
 
   doSearch(){
     const name = this.searchParam;
-    this.animeTheme.searchAnime(name)
+    this.animeThemeService.searchAnime(name)
     .then((data) => {
       this.results = data
     }).catch(

@@ -3,6 +3,9 @@ import { Component, Input} from '@angular/core';
 import { animeCardItem } from 'src/app/interface/anime-card';
 import { ThemesAnime} from 'src/app/interface/anime-themes';
 
+/**
+ * An anime cart
+ */
 @Component({
   selector: 'app-anime-card',
   templateUrl: './anime-card.component.html',
