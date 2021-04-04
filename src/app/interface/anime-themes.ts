@@ -11,11 +11,11 @@ export interface Theme {
     title : string,
     theme_id : string,
     type : string,
-    artist : string,
+    artist : string | null,
     mirrors : Array<Mirror>,
-    notes : string,
+    notes : string | null,
     episodes : string,
-    category : string
+    category : string | null
 }
 export interface Mirror {
     quality : string,

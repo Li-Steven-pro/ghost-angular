@@ -15,7 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatRadioModule} from '@angular/material/radio'
-
+import {MatPaginatorModule} from '@angular/material/paginator'
 /* App components */
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -54,6 +54,7 @@ import { SearchComponent} from './view/pages/search/search.component';
     MatButtonModule,
     MatSlideToggleModule,
     MatRadioModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [ AppComponent ]
