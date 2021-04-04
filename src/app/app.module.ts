@@ -25,7 +25,8 @@ import { AnimeComponent } from './view/pages/anime/anime.component';
 import { AnimeCardComponent } from './view/components/anime-card/anime-card.component';
 import { RecentComponent } from './view/pages/recent/recent.component';
 import { HorizontalListComponent } from './view/components/horizontal-list/horizontal-list.component';
-import { SearchComponent} from './view/pages/search/search.component'; 
+import { SearchComponent} from './view/pages/search/search.component';
+import {ListComponent} from './view/pages/list/list.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { SearchComponent} from './view/pages/search/search.component';
     MainMenuComponent,
     RecentComponent,
     HorizontalListComponent,
+    ListComponent,
   
   ],
   imports: [

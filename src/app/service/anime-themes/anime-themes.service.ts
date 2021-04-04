@@ -18,11 +18,11 @@ export class AnimeThemesService {
   }
 
   getAnilist(name : string){
-    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "anilist/" + name)
+    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "anilist/" + name).toPromise()
   }
 
   getMal(name : string){
-    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "mal/" + name )
+    return this.http.get<Array<ThemesAnime>>(this.baseUrl+ "mal/" + name ).toPromise()
   }
 
   getAnime(id : number){
