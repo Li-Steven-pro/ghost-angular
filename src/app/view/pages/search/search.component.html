@@ -27,7 +27,10 @@
         </mat-form-field>
         <button (click)="searchList()">Get List</button>
     </div>
-    <div *ngIf="results.length > 0">
+    <div *ngIf="isRequest">
+        <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+    <div *ngIf="results.length > 0; else noResult">
         <mat-paginator 
                [length]="results.length"
                [pageSize]="pageSize"
@@ -36,4 +39,7 @@
         </mat-paginator>
         <app-anime-card *ngFor="let anime of resultsToShow" [animeItem] = anime></app-anime-card>
     </div>
+    <ng-template #noResult>
+        <p>No result</p>
+    </ng-template>
 </div>

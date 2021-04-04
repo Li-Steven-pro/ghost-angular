@@ -16,6 +16,8 @@ export class SearchComponent {
   anime !: ThemesAnime;
   searchParam = "";
 
+  isRequest= false;
+
   provider = "mal";
   pseudo = "";
 
@@ -29,17 +31,21 @@ export class SearchComponent {
   }
 
   doSearch(){
+    this.isRequest = true;
     const name = this.searchParam;
     this.animeTheme.searchAnime(name)
     .then((data) => {
       console.log(data)
       this.results = data
       this.resultsToShow = this.results.slice(0,this.pageSize)
+      
     }).catch(
       (err) => {
         console.log(err)
       }
-    )
+    ).finally(()=>{
+      this.isRequest = false;
+    })
   }
 
   searchList(){

@@ -1,9 +1,15 @@
-<div *ngIf="results.length > 0">
-    <mat-paginator 
-           [length]="results.length"
-           [pageSize]="pageSize"
-           [pageSizeOptions]="pageSizeOptions"
-           (page)="onPageChange($event)">
-    </mat-paginator>
-    <app-anime-card *ngFor="let anime of resultsToShow" [animeItem] = anime></app-anime-card>
+<div>
+    <div *ngIf="isRequest">
+        <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+    <div *ngIf="results.length > 0">
+        <mat-paginator 
+               [length]="results.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="onPageChange($event)">
+        </mat-paginator>
+        <app-anime-card *ngFor="let anime of resultsToShow" [animeItem] = anime></app-anime-card>
+    </div>
+    
 </div>

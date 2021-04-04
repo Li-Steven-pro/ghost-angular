@@ -14,8 +14,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {MatRadioModule} from '@angular/material/radio'
-import {MatPaginatorModule} from '@angular/material/paginator'
+import {MatRadioModule} from '@angular/material/radio';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
+
 /* App components */
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +44,7 @@ import {ListComponent} from './view/pages/list/list.component';
     RecentComponent,
     HorizontalListComponent,
     ListComponent,
+
   
   ],
   imports: [
@@ -57,6 +64,9 @@ import {ListComponent} from './view/pages/list/list.component';
     MatSlideToggleModule,
     MatRadioModule,
     MatPaginatorModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [ AppComponent ]

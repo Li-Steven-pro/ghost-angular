@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
   resultsToShow : Array<ThemesAnime> = Array<ThemesAnime>();
   anime !: ThemesAnime;
   searchParam = "";
-
+  isRequest = false;
   provider = "mal";
   pseudo = "";
 
@@ -28,6 +28,7 @@ export class ListComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const provider = String(routeParams.get('provider'))
     const name = String(routeParams.get('name'));
+    this.isRequest = true;
     if(provider === 'mal'){
       this.animeTheme.getMal(name)
       .then((data) => {
@@ -38,7 +39,9 @@ export class ListComponent implements OnInit {
         (err) => {
           console.log(err)
         }
-      )
+      ).finally(()=> {
+        this.isRequest = false;
+      })
     }if (provider === 'anilist') {
       this.animeTheme.getAnilist(name)
       .then((data) => {
@@ -49,7 +52,9 @@ export class ListComponent implements OnInit {
         (err) => {
           console.log(err)
         }
-      )
+      ).finally(()=>{
+        this.isRequest = false;
+      })
     } else {
       console.log("error provider")
     }
