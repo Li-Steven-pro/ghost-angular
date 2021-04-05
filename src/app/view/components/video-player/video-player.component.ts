@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {VgApiService} from '@videogular/ngx-videogular/core';
+import {BitrateOptions, VgApiService} from '@videogular/ngx-videogular/core';
 import { Theme } from 'src/app/interface/anime-themes';
 
 @Component({

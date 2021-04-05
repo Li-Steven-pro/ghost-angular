@@ -1,3 +1,36 @@
 .info-card {
   background: var(--cart-background);
 }
+.anime-image {
+  background-size: cover;
+  margin-right: 2rem;
+  border-radius: 0px;
+}
+em {
+  font-style: normal;
+  font-weight: normal;
+}
+/*mat-divider {
+  margin: 2rem;
+  width: calc(100% - 4rem);
+}*/
+mat-card-header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+mat-card-content {
+  margin: 2rem;
+}
+
+@media (max-width: 700px) {
+  .info-card {
+    padding-bottom: 1rem;
+  }
+  mat-card-header {
+    flex-wrap: wrap;
+  }
+
+  mat-card-header-text {
+    margin: 5rem 0rem;
+  }
+}

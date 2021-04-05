@@ -9,5 +9,13 @@ import { Theme } from 'src/app/interface/anime-themes';
 export class ThemeCardComponent{
   @Input() theme!:Theme
   @Input() index!:number
+
+  /* Ripple animation config */
+  centered = false;
+  disabled = false;
+  unbounded = false;
+  radius!: number;
+  color!: string;
+  
   constructor() { }
 }

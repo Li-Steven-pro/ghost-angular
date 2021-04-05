@@ -1,5 +1,25 @@
 <mat-card class="info-card">
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      mat-card-lg-image
+      class="anime-image"
+      [style.backgroundImage]="'url(' + animeInfo.cover + ')'"
+    ></div>
+    <mat-card-title>{{ getThemeTitle() }}</mat-card-title>
+
+    <mat-card-subtitle>
+      <div><em>Anime:</em> {{ animeInfo.title }}</div>
+      <div><em>Year:</em>{{ animeInfo.year }}</div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
   <mat-card-content>
-    <h2>{{ getThemeTitle() }}</h2>
+    <h3>OST:</h3>
+    <em>Artist:</em> {{ getCurrentTheme().artist }} <br />
+    <em>Type:</em> {{ getCurrentTheme().type }} <br />
+    <em>Episodes:</em> {{ getCurrentTheme().episodes }} <br />
+    <em>Category:</em> {{ getCurrentTheme().category }} <br />
+    <em>Notes:</em> {{ getCurrentTheme().notes }} <br />
   </mat-card-content>
 </mat-card>

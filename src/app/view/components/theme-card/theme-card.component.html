@@ -1,7 +1,14 @@
-<div>
-  <mat-card>
+<mat-card
+  matRipple
+  [matRippleCentered]="centered"
+  [matRippleDisabled]="disabled"
+  [matRippleUnbounded]="unbounded"
+  [matRippleRadius]="radius"
+  [matRippleColor]="color"
+>
+  <div>
     <mat-card-content class="content">
       <h2>{{ index + 1 }} - {{ theme.title }}</h2>
     </mat-card-content>
-  </mat-card>
-</div>
+  </div>
+</mat-card>

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /* Material modules */
 import {MatIconModule} from '@angular/material/icon';
@@ -19,6 +19,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatRippleModule, MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions} from '@angular/material/core';
 
 
 
@@ -44,6 +45,9 @@ import { ThemeCardComponent } from './view/components/theme-card/theme-card.comp
 import { VideoPlayerComponent } from './view/components/video-player/video-player.component'; 
 
 import {ListComponent} from './view/pages/list/list.component'; 
+import { AppGlobalRippleOptionsService } from './service/global-ripple-options/app-global-ripple-options.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +70,8 @@ import {ListComponent} from './view/pages/list/list.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NoopAnimationsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
 
     /* Material modules */
     MatIconModule,
@@ -82,6 +87,7 @@ import {ListComponent} from './view/pages/list/list.component';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
+    MatRippleModule,
 
     /* Video modules */
     VgCoreModule,
@@ -90,7 +96,9 @@ import {ListComponent} from './view/pages/list/list.component';
     VgBufferingModule
     
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: AppGlobalRippleOptionsService}
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { 

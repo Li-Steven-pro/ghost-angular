@@ -8,25 +8,26 @@
   </vg-scrub-bar>
 
   <!-- Here we define the controls in the video player -->
-  <vg-controls vgFor="anime-video" [vgAutohide]="true" [vgAutohideTime]="3">
+  <vg-controls
+    vgFor="anime-video"
+    [vgAutohide]="true"
+    [vgAutohideTime]="3"
+    class="controls"
+  >
     <vg-play-pause></vg-play-pause>
     <vg-playback-button></vg-playback-button>
 
     <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-    <p>test</p>
+    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
     <vg-scrub-bar style="pointer-events: none"></vg-scrub-bar>
 
-    <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
-    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-
-    <vg-track-selector></vg-track-selector>
-    <vg-quality-selector></vg-quality-selector>
     <vg-mute></vg-mute>
     <vg-volume></vg-volume>
 
     <vg-fullscreen></vg-fullscreen>
   </vg-controls>
 
+  <!-- Media -->
   <video
     [vgMedia]="$any(media)"
     #media

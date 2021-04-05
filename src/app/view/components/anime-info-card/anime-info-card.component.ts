@@ -11,6 +11,13 @@ export class AnimeInfoCardComponent{
   @Input() currentTheme!: number;
   private themeTitle: String;
 
+  /* Ripple animation config */
+  centered = false;
+  disabled = false;
+  unbounded = false;
+  radius!: number;
+  color!: string;
+
   constructor() { 
     this.themeTitle = "[ DEFAULT_TITLE]"
   }
@@ -28,6 +35,4 @@ export class AnimeInfoCardComponent{
     }
     return this.themeTitle;
   }
-
-
 }

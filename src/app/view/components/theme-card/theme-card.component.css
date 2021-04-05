@@ -1,8 +1,12 @@
 .content {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  margin: 0;
   padding-right: 5px;
+}
+
+.content h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 mat-card :hover {
