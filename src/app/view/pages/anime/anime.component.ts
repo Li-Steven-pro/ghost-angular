@@ -35,6 +35,7 @@ export class AnimeComponent implements OnInit{
     .then((data) => {
       console.log("Title promise:", data.themes[0].mirrors[0].mirror);
       this.anime = data;
+      this.storeRecent(data);
       this.currentTheme = this.anime.themes[0];
       this.isURLReady = true;
     }).catch(
@@ -49,5 +50,14 @@ export class AnimeComponent implements OnInit{
      selected theme from the themes list.*/
   OnChangeTheme(newTheme:Theme){
     this.currentTheme = newTheme;
+  }
+
+  storeRecent(data: ThemesAnime){
+    let recents : Array<ThemesAnime> = JSON.parse(localStorage.getItem("recents") || '[]')
+    recents.push(data)
+    if(recents.length > 10){
+      recents = recents.slice(1,recents.length);
+    }
+    localStorage.setItem("recents", JSON.stringify(recents)) 
   }
 }

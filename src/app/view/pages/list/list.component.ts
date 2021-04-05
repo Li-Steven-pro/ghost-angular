@@ -50,7 +50,6 @@ export class ListComponent implements OnInit {
   }
 
   doRequest(provider : string, name : string){
-    console.log("doRequest");
     if(provider === 'mal'){
       this.makeMalRequest(name)
     }if (provider === 'anilist') {
