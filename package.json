@@ -24,6 +24,7 @@
     "@mdi/light-font": "^0.2.63",
     "@mdi/light-svg": "^0.2.63",
     "@videogular/ngx-videogular": "^3.0.1",
+    "ngx-owl-carousel-o": "^5.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.3"

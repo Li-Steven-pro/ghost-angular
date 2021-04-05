@@ -2,8 +2,9 @@
 
 ## Dependencies
 
-Angular material with `ng add @angular/material`</br>
-Videogular with `npm install @videogular/ngx-videogular` and `npm install @types/core-js`</br>
+[Angular material](https://material.angular.io/) with `ng add @angular/material`</br>
+[Videogular](https://videogular.github.io/ngx-videogular/docs/) with `npm install @videogular/ngx-videogular` and `npm install @types/core-js`</br>
+[ngx-owl-carousel-o](https://www.npmjs.com/package/angular-responsive-carousel) with `npm install ngx-owl-carousel-o`
 
 ## Resources
 
