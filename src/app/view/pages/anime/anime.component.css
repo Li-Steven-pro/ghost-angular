@@ -5,11 +5,11 @@
   width: 100%;
   justify-content: space-between;
 }
-.video-info {
+.player-and-info {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  margin-right: 30px;
+  margin-right: 1.5%;
 }
 .video-player {
   margin-bottom: 30px;
@@ -22,8 +22,9 @@
   .video-player-page {
     flex-wrap: wrap;
   }
-  .video-info {
+  .player-and-info {
     width: 100%;
+    margin: 0;
   }
   .vertical-list {
     width: 100%;

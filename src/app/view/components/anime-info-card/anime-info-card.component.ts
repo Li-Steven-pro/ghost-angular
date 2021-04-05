@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ThemesAnime } from 'src/app/interface/anime-themes';
+import { Theme, ThemesAnime } from 'src/app/interface/anime-themes';
 
 @Component({
   selector: 'app-anime-info-card',
@@ -8,6 +8,10 @@ import { ThemesAnime } from 'src/app/interface/anime-themes';
 })
 export class AnimeInfoCardComponent{
   @Input() animeInfo!: ThemesAnime;
+  @Input() currentTheme!: Theme;
+  themeTitle: String;
 
-  constructor() { }
+  constructor() { 
+    this.themeTitle = "[ DEFAULT_TITLE]"
+  }
 }

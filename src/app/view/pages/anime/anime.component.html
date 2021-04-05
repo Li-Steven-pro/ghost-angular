@@ -1,10 +1,13 @@
 <div class="video-player-page" *ngIf="isURLReady">
-  <div class="video-info">
+  <div class="player-and-info">
     <app-video-player
       class="video-player"
       [animeTheme]="currentTheme"
     ></app-video-player>
-    <app-anime-info-card [animeInfo]="anime"></app-anime-info-card>
+    <app-anime-info-card
+      [animeInfo]="anime"
+      [currentTheme]="currentTheme"
+    ></app-anime-info-card>
   </div>
   <app-themes-vertical-list
     class="vertical-list"

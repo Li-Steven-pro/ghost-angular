@@ -15,6 +15,7 @@ body {
 /* Global colors (and properties)*/
 :root {
   /*Colors*/
+  --primary-color: #7b61ff;
   --text-color: #fff;
   --background-color: linear-gradient(180deg, #323232 0%, #1b1a1d 92.31%);
   --background-color-overlay: linear-gradient(
