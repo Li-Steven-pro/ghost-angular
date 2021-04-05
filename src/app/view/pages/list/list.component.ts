@@ -32,7 +32,6 @@ export class ListComponent implements OnInit {
     if(provider === 'mal'){
       this.animeTheme.getMal(name)
       .then((data) => {
-        console.log(data)
         this.results = data
         this.resultsToShow = this.results.slice(0,this.pageSize)
       }).catch(

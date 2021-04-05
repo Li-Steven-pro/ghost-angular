@@ -3,3 +3,10 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (min-width: 1200px) {
+  .video {
+    height: 80vh;
+    width: auto;
+  }
+}

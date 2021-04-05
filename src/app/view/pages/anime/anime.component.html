@@ -2,7 +2,7 @@
   <div class="player-and-info">
     <app-video-player
       class="video-player"
-      [animeTheme]="currentTheme"
+      [animeTheme]="anime.themes[currentTheme]"
     ></app-video-player>
     <app-anime-info-card
       [animeInfo]="anime"

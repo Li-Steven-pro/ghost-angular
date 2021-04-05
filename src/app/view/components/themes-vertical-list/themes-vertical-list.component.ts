@@ -8,10 +8,11 @@ import { Theme } from 'src/app/interface/anime-themes';
 })
 export class ThemesVerticalListComponent{
   @Input() themeList!:Theme[]
-  @Output() clickedItemEvent = new EventEmitter<Theme>();
+  @Input() currentTheme!:number
+  @Output() clickedItemEvent = new EventEmitter<number>();
   constructor() { }
 
-  onClick(theme:Theme){
+  onClick(theme:number){
     this.clickedItemEvent.emit(theme);
   }
 }

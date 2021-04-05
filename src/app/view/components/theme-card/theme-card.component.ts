@@ -8,5 +8,6 @@ import { Theme } from 'src/app/interface/anime-themes';
 })
 export class ThemeCardComponent{
   @Input() theme!:Theme
+  @Input() index!:number
   constructor() { }
 }

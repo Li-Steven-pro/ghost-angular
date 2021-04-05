@@ -2,13 +2,14 @@
   <div>
     <h1>OST List:</h1>
   </div>
-  <mat-nav-list cdkScrollable>
+  <mat-list cdkScrollable>
     <app-theme-card
       mat-list-item
       class="list-item"
-      *ngFor="let theme of themeList"
+      *ngFor="let theme of themeList; let index = index"
       [theme]="theme"
-      (click)="onClick(theme)"
+      [index]="index"
+      (click)="onClick(index)"
     ></app-theme-card>
-  </mat-nav-list>
+  </mat-list>
 </section>
