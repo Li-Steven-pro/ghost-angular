@@ -16,4 +16,3 @@ export interface ThemesMoeAnime {
     themes: Array<ThemesMoeTheme>
     watchStatus: number
 }
-  

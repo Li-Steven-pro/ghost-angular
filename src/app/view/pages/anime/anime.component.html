@@ -1,1 +1,9 @@
-<p>anime works!</p>
+<div class="video-player-page" *ngIf="isURLReady">
+  <div class="video-info">
+    <app-video-player class="video-player" [anime]="anime"></app-video-player>
+    <app-anime-info-card [animeInfo]="anime"></app-anime-info-card>
+  </div>
+  <app-themes-vertical-list
+    [themeList]="anime.themes"
+  ></app-themes-vertical-list>
+</div>
