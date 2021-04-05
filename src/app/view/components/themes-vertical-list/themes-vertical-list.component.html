@@ -1,0 +1,14 @@
+<section>
+  <div>
+    <h1>OST List:</h1>
+  </div>
+  <mat-nav-list cdkScrollable>
+    <app-theme-card
+      mat-list-item
+      class="list-item"
+      *ngFor="let theme of themeList"
+      [theme]="theme"
+      (click)="onClick(theme)"
+    ></app-theme-card>
+  </mat-nav-list>
+</section>

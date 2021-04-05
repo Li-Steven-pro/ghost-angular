@@ -1,23 +1,27 @@
-.main-menu-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  min-width: var(--min-menu-width);
+#logo {
+  color: var(--text-color);
+}
 
-  background-color: var(--menu-pane-color);
-  border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+/* Layout */
+.main-layout {
   height: 100%;
-  position: fixed;
+  background: var(--background-color);
 }
-.menu-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  padding: 10px;
+.side-nav {
+  width: 200px;
+  background: var(--menu-pane-color);
+  padding: 15px;
 }
-.menu-item {
+.main-content {
+  padding: 15px;
+}
+
+/* Menu (sidebar) items */
+.menu-text {
   margin: auto;
-  margin-left: 2rem;
+  margin-left: 3rem;
+}
+.material-icons {
+  color: rgba(255, 255, 255, 1);
+  background-position: center;
 }

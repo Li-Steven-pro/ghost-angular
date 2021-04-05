@@ -1,0 +1,11 @@
+<section class="horizontal-list">
+  <div class="horizontal-list-header">
+    <h1>Recent</h1>
+    <h2>More</h2>
+  </div>
+  <ul class="horizontal-list-card">
+    <li class="horizontal-list-item" *ngFor="let anime of animeList">
+      <app-anime-card [animeItem]="anime"></app-anime-card>
+    </li>
+  </ul>
+</section>

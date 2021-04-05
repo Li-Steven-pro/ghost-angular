@@ -1,0 +1,10 @@
+<mat-card
+  class="anime-card card-content-color"
+  routerLink="/anime/{{ animeItem.mal_id }}"
+>
+  <img mat-card-image [src]="animeItem.cover" [alt]="animeItem.title[0]" />
+  <mat-card-header>
+    <h3>{{ animeItem.title[0] }}</h3>
+    <p class="subtitle">{{ animeItem.year }}</p>
+  </mat-card-header>
+</mat-card>

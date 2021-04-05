@@ -1,0 +1,17 @@
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.home-section {
+  margin-bottom: 2rem;
+  flex: 0 0 auto;
+  height: 600px;
+  width: auto;
+}
+
+@media (max-width: 1070px) {
+  .home-layout {
+    width: 100%;
+  }
+}
