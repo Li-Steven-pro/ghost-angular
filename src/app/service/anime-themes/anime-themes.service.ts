@@ -8,7 +8,6 @@ import { ThemesAnime } from 'src/app/interface/anime-themes';
 export class AnimeThemesService {
 
   baseUrl = "https://animethemes-api.herokuapp.com/api/v1/";
-  
   constructor(private http : HttpClient){
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
