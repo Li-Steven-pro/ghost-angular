@@ -7,7 +7,7 @@ import { Theme } from 'src/app/interface/anime-themes';
   styleUrls: ['./themes-vertical-list.component.css']
 })
 export class ThemesVerticalListComponent{
-  @Input() themeList!:Theme[]
+  @Input() themeList?: Array<Theme>
   @Output() clickedItemEvent = new EventEmitter<Theme>();
   constructor() { }
 

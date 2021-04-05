@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Theme, ThemesAnime } from 'src/app/interface/anime-themes';
 
 @Component({

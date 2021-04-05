@@ -1,7 +1,7 @@
-import { animeCardItem} from 'src/app/interface/anime-card'
+import { AnimeCardItem} from 'src/app/interface/anime-card'
 import { ThemesAnime } from '../interface/anime-themes'
 
-export const MOCKANIMELIST : Array<ThemesAnime> = [
+export const mockAnimeList : Array<ThemesAnime> = [
     {
         mal_id: 41380,
         title: [

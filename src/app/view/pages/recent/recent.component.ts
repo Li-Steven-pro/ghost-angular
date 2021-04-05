@@ -8,7 +8,7 @@ import { ThemesAnime } from 'src/app/interface/anime-themes';
 })
 export class RecentComponent implements OnInit {
 
-  recentList !: Array<ThemesAnime>
+  recentList ?: Array<ThemesAnime>
   constructor() { }
 
   ngOnInit(): void {

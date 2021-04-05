@@ -11,7 +11,7 @@ import { ThemesAnime} from 'src/app/interface/anime-themes';
 })
 export class AnimeCardComponent{
   @Input()
-  animeItem!: ThemesAnime;
+  animeItem?: ThemesAnime;
 
   constructor() {
   }

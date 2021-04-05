@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MOCKANIMELIST } from 'src/app/constants/mock-anime-list';
+import { Component} from '@angular/core';
+import { mockAnimeList } from 'src/app/constants/mock-anime-list';
 import { ThemesAnime } from 'src/app/interface/anime-themes';
 
 @Component({
@@ -8,8 +8,10 @@ import { ThemesAnime } from 'src/app/interface/anime-themes';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
   mockList:Array<ThemesAnime>
+
   constructor() { 
-    this.mockList = MOCKANIMELIST;
+    this.mockList = mockAnimeList;
   }
 }

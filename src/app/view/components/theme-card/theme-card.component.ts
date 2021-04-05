@@ -7,6 +7,6 @@ import { Theme } from 'src/app/interface/anime-themes';
   styleUrls: ['./theme-card.component.css']
 })
 export class ThemeCardComponent{
-  @Input() theme!:Theme
+  @Input() theme?:Theme
   constructor() { }
 }

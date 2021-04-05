@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { MenuItem } from 'src/app/interface/menu-item'
-import {MENUITEMS} from 'src/app/constants/menu-items.constants';
+import { menuItem } from 'src/app/constants/menu-items.constants';
 
 @Component({
   selector: 'app-main-menu',
@@ -11,6 +11,6 @@ export class MainMenuComponent{
 
   menuItemList: MenuItem[];
   constructor() {
-    this.menuItemList = MENUITEMS;
+    this.menuItemList = menuItem;
    }
 }

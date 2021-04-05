@@ -14,14 +14,10 @@ export class ListComponent implements OnInit {
 
   listKey = "userList";
   results: Array<ThemesAnime> = Array<ThemesAnime>()
-  resultsToShow : Array<ThemesAnime> = Array<ThemesAnime>();
-  anime !: ThemesAnime;
-  searchParam = ""
+  resultsToShow: Array<ThemesAnime> = Array<ThemesAnime>();
+  anime ?: ThemesAnime;
   isRequest = false
-  provider!: string
-  pseudo = ""
 
-  length = 100;
   pageSize = 10;
   pageSizeOptions: number[] = [5, 10, 25, 100];
 
@@ -60,11 +56,13 @@ export class ListComponent implements OnInit {
       });
     }
   }
+
+  /* set the result to show if the pagination values changed */
   onPageChange($event : PageEvent){
     this.resultsToShow = this.results.slice($event.pageIndex*$event.pageSize,$event.pageIndex*$event.pageSize + $event.pageSize)
-    console.log(this.resultsToShow)
   }
 
+  /* Request using MyAnimeList provider */
   makeMalRequest(name : string){
     this.animeTheme.getMal(name)
     .then((data) => {
@@ -81,6 +79,7 @@ export class ListComponent implements OnInit {
     })
   }
 
+  /* Request using Anilist provider */
   makeAnilistRequest(name : string){
     this.animeTheme.getAnilist(name)
       .then((data) => {
@@ -97,6 +96,7 @@ export class ListComponent implements OnInit {
       })
   }
 
+  /* Save the user list in the local storage */
   savePersistenceList(provider : string, name: string){
     const value = {
       name : name,
@@ -106,6 +106,7 @@ export class ListComponent implements OnInit {
     localStorage.setItem(this.listKey, JSON.stringify(value))
   }
 
+  /* Put http request / localstorage data in the results and set the result to show */
   setResults(results : Array<ThemesAnime> ){
     this.results = results;
     this.resultsToShow = this.results.slice(0,this.pageSize)

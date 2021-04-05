@@ -1,6 +1,6 @@
 import { Icon } from 'src/app/interface/menu-item'
 
-export const ICONS : Icon[] = [
+export const icons : Icon[] = [
     {
         label: 'home',
         path: 'src/assets/svg/home.svg'

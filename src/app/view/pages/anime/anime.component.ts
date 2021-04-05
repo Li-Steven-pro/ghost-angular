@@ -52,6 +52,9 @@ export class AnimeComponent implements OnInit{
     this.currentTheme = newTheme;
   }
 
+  /* 
+  * Store the anime info in the localstorage to get recent searchs.
+  */
   storeRecent(data: ThemesAnime){
     let recents : Array<ThemesAnime> = JSON.parse(localStorage.getItem("recents") || '[]')
     recents.push(data)

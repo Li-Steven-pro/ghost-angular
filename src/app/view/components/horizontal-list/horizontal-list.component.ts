@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {MOCKANIMELIST } from 'src/app/constants/mock-anime-list';
+import { mockAnimeList } from 'src/app/constants/mock-anime-list';
 import { ThemesAnime } from 'src/app/interface/anime-themes';
 
 @Component({
@@ -12,7 +12,7 @@ export class HorizontalListComponent {
   animeList: Array<ThemesAnime>;
   
   constructor() { 
-    this.animeList = MOCKANIMELIST;
+    this.animeList = mockAnimeList;
   }
 
 }

@@ -21,7 +21,6 @@ export class SearchComponent {
   provider = "mal";
   pseudo = "";
 
-  length = 100;
   pageSize = 10;
   pageSizeOptions: number[] = [5, 10, 25, 100];
 

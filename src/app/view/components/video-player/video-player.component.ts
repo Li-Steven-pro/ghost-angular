@@ -9,7 +9,7 @@ import { Theme } from 'src/app/interface/anime-themes';
 })
 export class VideoPlayerComponent {
   vgApi!: VgApiService;
-  @Input() animeTheme!:Theme
+  @Input() animeTheme?:Theme
 
   constructor() { }
 
