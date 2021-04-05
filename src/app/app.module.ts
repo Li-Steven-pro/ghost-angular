@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -21,7 +21,6 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
-
 /* Video modules */
 import {VgCoreModule} from '@videogular/ngx-videogular/core';
 import {VgControlsModule} from '@videogular/ngx-videogular/controls';
@@ -42,7 +41,6 @@ import { AnimeInfoCardComponent } from './view/components/anime-info-card/anime-
 import { ThemesVerticalListComponent } from './view/components/themes-vertical-list/themes-vertical-list.component';
 import { ThemeCardComponent } from './view/components/theme-card/theme-card.component';
 import { VideoPlayerComponent } from './view/components/video-player/video-player.component'; 
-
 import {ListComponent} from './view/pages/list/list.component'; 
 @NgModule({
   declarations: [
