@@ -3,8 +3,8 @@
   routerLink="/anime/{{ animeItem.mal_id }}"
 >
   <img mat-card-image [src]="animeItem.cover" [alt]="animeItem.title[0]" />
-  <mat-card-content>
+  <mat-card-header>
     <h3>{{ animeItem.title[0] }}</h3>
-    <p class="media-length">--:--</p>
-  </mat-card-content>
+    <p class="subtitle">{{ animeItem.year }}</p>
+  </mat-card-header>
 </mat-card>

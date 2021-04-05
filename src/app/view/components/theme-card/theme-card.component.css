@@ -1,0 +1,16 @@
+.content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 5px;
+}
+
+mat-card :hover {
+  fill: rgb(105, 103, 103);
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,9 +1,14 @@
 <div class="video-player-page" *ngIf="isURLReady">
   <div class="video-info">
-    <app-video-player class="video-player" [anime]="anime"></app-video-player>
+    <app-video-player
+      class="video-player"
+      [animeTheme]="currentTheme"
+    ></app-video-player>
     <app-anime-info-card [animeInfo]="anime"></app-anime-info-card>
   </div>
   <app-themes-vertical-list
+    class="vertical-list"
     [themeList]="anime.themes"
+    (clickedItemEvent)="OnChangeTheme($event)"
   ></app-themes-vertical-list>
 </div>

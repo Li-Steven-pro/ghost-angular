@@ -1,5 +1,5 @@
 .video {
   margin: auto;
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }

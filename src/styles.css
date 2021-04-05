@@ -37,6 +37,9 @@ body {
     rgba(255, 255, 255, 0.025) 0%,
     rgba(255, 255, 255, 0.05) 88.67%
   );
+
+  /*Video player*/
+  --theme-list-width: 750px;
 }
 
 h1,

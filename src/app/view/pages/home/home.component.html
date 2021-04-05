@@ -1,4 +1,8 @@
 <div class="home-layout">
-  <app-anime-card class="home-section"></app-anime-card>
-  <app-horizontal-list></app-horizontal-list>
+  <app-anime-card
+    [animeItem]="mockList[0]"
+    class="home-section"
+  ></app-anime-card>
+  <app-horizontal-list [animeList]="mockList"></app-horizontal-list>
+  <app-horizontal-list [animeList]="mockList"></app-horizontal-list>
 </div>

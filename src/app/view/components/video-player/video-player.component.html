@@ -33,6 +33,10 @@
     crossorigin
     class="video"
   >
-    <source [src]="anime.themes[0].mirrors[0].mirror" type="video/webm" />
+    <source
+      *ngFor="let mirror of animeTheme.mirrors"
+      [src]="mirror.mirror"
+      type="video/webm"
+    />
   </video>
 </vg-player>

@@ -1,6 +1,10 @@
-.vertical-list {
-  width: 400px;
+mat-nav-list {
+  height: 80vh;
+  /*overflow-y: scroll;*/
 }
 .list-item {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.list-item:hover {
+  fill: rgb(105, 103, 103);
 }

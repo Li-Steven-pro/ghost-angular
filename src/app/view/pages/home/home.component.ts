@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MOCKANIMELIST } from 'src/app/constants/mock-anime-list';
+import { ThemesAnime } from 'src/app/interface/anime-themes';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
-  constructor() { }
-
+  mockList:Array<ThemesAnime>
+  constructor() { 
+    this.mockList = MOCKANIMELIST;
+  }
 }

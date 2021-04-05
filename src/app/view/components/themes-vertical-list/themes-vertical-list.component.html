@@ -1,10 +1,14 @@
-<section class="vertical-list">
+<section>
   <div>
     <h1>OST List:</h1>
   </div>
-  <ul>
-    <li class="list-item" *ngFor="let theme of themeList">
-      <app-theme-card [theme]="theme"></app-theme-card>
-    </li>
-  </ul>
+  <mat-nav-list cdkScrollable>
+    <app-theme-card
+      mat-list-item
+      class="list-item"
+      *ngFor="let theme of themeList"
+      [theme]="theme"
+      (click)="onClick(theme)"
+    ></app-theme-card>
+  </mat-nav-list>
 </section>
