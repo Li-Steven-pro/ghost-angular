@@ -1,5 +1,9 @@
-<vg-player>
-  <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-    <source [src]="anime.themes[0].mirrors[0].mirror" type="video/webm" />
-  </video>
-</vg-player>
+<div class="video-player-page" *ngIf="isURLReady">
+  <div class="video-info">
+    <app-video-player class="video-player" [anime]="anime"></app-video-player>
+    <app-anime-info-card [animeInfo]="anime"></app-anime-info-card>
+  </div>
+  <app-themes-vertical-list
+    [themeList]="anime.themes"
+  ></app-themes-vertical-list>
+</div>

@@ -31,7 +31,11 @@ import { AnimeComponent } from './view/pages/anime/anime.component';
 import { AnimeCardComponent } from './view/components/anime-card/anime-card.component';
 import { RecentComponent } from './view/pages/recent/recent.component';
 import { HorizontalListComponent } from './view/components/horizontal-list/horizontal-list.component';
-import { SearchComponent} from './view/pages/search/search.component'; 
+import { SearchComponent} from './view/pages/search/search.component';
+import { AnimeInfoCardComponent } from './view/components/anime-info-card/anime-info-card.component';
+import { ThemesVerticalListComponent } from './view/components/themes-vertical-list/themes-vertical-list.component';
+import { ThemeCardComponent } from './view/components/theme-card/theme-card.component';
+import { VideoPlayerComponent } from './view/components/video-player/video-player.component'; 
 
 @NgModule({
   declarations: [
@@ -43,6 +47,10 @@ import { SearchComponent} from './view/pages/search/search.component';
     MainMenuComponent,
     RecentComponent,
     HorizontalListComponent,
+    AnimeInfoCardComponent,
+    ThemesVerticalListComponent,
+    ThemeCardComponent,
+    VideoPlayerComponent,
   
   ],
   imports: [

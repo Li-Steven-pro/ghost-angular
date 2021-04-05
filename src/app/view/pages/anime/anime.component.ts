@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ThemesAnime } from 'src/app/interface/anime-themes';
+import { AnimeThemesService } from 'src/app/service/anime-themes/anime-themes.service';
 
 /**
  * A page for media player and
@@ -10,9 +12,32 @@ import { ThemesAnime } from 'src/app/interface/anime-themes';
   templateUrl: './anime.component.html',
   styleUrls: ['./anime.component.css']
 })
-export class AnimeComponent{
-  @Input() anime!: ThemesAnime;
+export class AnimeComponent implements OnInit{
   
-  constructor() { }
+  anime!: ThemesAnime;
+  isURLReady = false;
+  
+  constructor(
+    private route: ActivatedRoute,
+    private service: AnimeThemesService
+  ) {}
 
+  ngOnInit(){
+    this.getAnime()
+  }
+
+  getAnime(){
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    this.service.getAnime(id)
+    .then((data) => {
+      console.log("Title promise:", data.themes[0].mirrors[0].mirror);
+      this.anime = data;
+      this.isURLReady = true;
+    }).catch(
+      (err) => {
+        console.log(err);
+      }
+    );
+  }
 }

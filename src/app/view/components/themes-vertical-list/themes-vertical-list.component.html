@@ -1,0 +1,10 @@
+<section class="vertical-list">
+  <div>
+    <h1>OST List:</h1>
+  </div>
+  <ul>
+    <li class="list-item" *ngFor="let theme of themeList">
+      <app-theme-card [theme]="theme"></app-theme-card>
+    </li>
+  </ul>
+</section>
