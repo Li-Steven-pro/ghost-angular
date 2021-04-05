@@ -14,7 +14,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {MatRadioModule} from '@angular/material/radio'
+import {MatRadioModule} from '@angular/material/radio';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
 
 /* Video modules */
 import {VgCoreModule} from '@videogular/ngx-videogular/core';
@@ -37,6 +43,7 @@ import { ThemesVerticalListComponent } from './view/components/themes-vertical-l
 import { ThemeCardComponent } from './view/components/theme-card/theme-card.component';
 import { VideoPlayerComponent } from './view/components/video-player/video-player.component'; 
 
+import {ListComponent} from './view/pages/list/list.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +58,7 @@ import { VideoPlayerComponent } from './view/components/video-player/video-playe
     ThemesVerticalListComponent,
     ThemeCardComponent,
     VideoPlayerComponent,
-  
+    ListComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,12 +78,17 @@ import { VideoPlayerComponent } from './view/components/video-player/video-playe
     MatButtonModule,
     MatSlideToggleModule,
     MatRadioModule,
+    MatPaginatorModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
 
     /* Video modules */
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule
+    
   ],
   providers: [],
   bootstrap: [ AppComponent ]

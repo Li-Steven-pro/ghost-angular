@@ -1,6 +1,4 @@
-import { isDefined } from '@angular/compiler/src/util';
 import { Component, Input} from '@angular/core';
-import { animeCardItem } from 'src/app/interface/anime-card';
 import { ThemesAnime} from 'src/app/interface/anime-themes';
 
 /**
